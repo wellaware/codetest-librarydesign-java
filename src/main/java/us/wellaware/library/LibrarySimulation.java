@@ -13,42 +13,42 @@ public class LibrarySimulation implements Library {
 
     public boolean addBookToShelf(long isbn, String title, String author, String genre, String publisher,
                                int publicationYear, int pageCount) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     public String getBookTitle(long isbn) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     public List<String> getShelfNames() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     public String findShelfNameForISBN(long isbn) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     public List<Long> getISBNsOnShelf(String shelfName) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     public List<Long> getISBNsForGenre(String genre, int limit) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     public List<Long> getISBNsForAuthor(String author, int limit) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     public List<Long> getISBNsForPublisher(String publisher, int limit) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     public List<Long> getISBNsPublishedAfterYear(short publicationYear, int limit) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     public List<Long> getISBNsWithMinimumPageCount(int minimumPageCount, int limit) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 }

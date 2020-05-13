@@ -1,5 +1,5 @@
 # codetest-librarydesign-java
-A coding test to design a simple model in Java for a library of books
+A coding test to design a simple model in Java for a library of books.
 
 ## Background
 
@@ -12,13 +12,14 @@ Implement a simulated library that contains books on shelves in the specified or
 Implement the **Library** interface methods in the **LibrarySimulation** implementing class. These methods will allow the calling program to adds books to library shelves and fetch books by certain criteria.
 
 Your implementation must adhere to the following rules:
-1. Book ISBN numbers are unique.  There cannot be two books with the same ISBN number, so an attempt to add a book to a shelf when that ISBN number already exists in the library should fail.
+1. Book ISBN numbers are numeric and unique.  There cannot be two books with the same ISBN number, so an attempt to add a book to a shelf when that ISBN number already exists in the library should fail.
 2. Books are only put on the same shelf as other books of the same genre.
 3. Each shelf can only hold a maximum number of books, specified by the library class member variable.
 4. When a shelf is full, a new shelf must be created to accommodate another book for that genre.
 5. Each shelf will have an associated genre and shelf number within the genre.  The name of the shelf should be formatted as "Genre - Number". For example, “Science Fiction – 1”, “Science Fiction – 2”, “Science Fiction – 3”, “Cooking - 1”, “Cooking – 2”, “Travel – 1”.
 6. Books are ordered alphabetically first by author, then title.  The first books in the order are placed on that genre’s shelf #1, when that shelf is full the next books in order go on that genre’s shelf #2, etc.  When adding a book to a shelf that’s already full, books will get displaced to the next numbered shelf to maintain sort order.
 7. Only create the number of shelves necessary for all the books.  There should not be any empty shelves in the library.
+8. Any specific instructions for a particular interface method will be given in comments in the interface source file.
 
 You can choose the method that you use to test your **LibrarySimulation** class, such as calling methods and testing results in the program **main** method, writing **junit** tests, etc. A sample data csv file has been provided in the resources folder if you would like to use it for sample data, or feel free to use your own test book data for testing.
 
